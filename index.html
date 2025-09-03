@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selector RGB Moderno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-5 fw-bold">Selector de Color RGB</h1>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <!-- Card de la app -->
+        <div class="card shadow-lg rounded-4 p-4">
+          
+          <!-- Recuadro de color -->
+          <div id="color-box" class="rounded-4 mb-4 d-flex align-items-center justify-content-center">
+            <h2 id="hex-code" class="text-white text-shadow">#000000</h2>
+          </div>
+
+          <!-- Color Picker -->
+          <div class="mb-4">
+            <label for="colorPicker" class="form-label fw-semibold">Seleccionar color</label>
+            <input type="color" class="form-control form-control-color" id="colorPicker" value="#000000" title="Elige un color">
+          </div>
+
+          <!-- Controles RGB -->
+          <div class="mb-3">
+            <label for="redRange" class="form-label">Rojo: <span id="redValue">0</span></label>
+            <input type="range" class="form-range" min="0" max="255" value="0" id="redRange">
+            <input type="number" class="form-control mt-2" min="0" max="255" value="0" id="redInput">
+          </div>
+
+          <div class="mb-3">
+            <label for="greenRange" class="form-label">Verde: <span id="greenValue">0</span></label>
+            <input type="range" class="form-range" min="0" max="255" value="0" id="greenRange">
+            <input type="number" class="form-control mt-2" min="0" max="255" value="0" id="greenInput">
+          </div>
+
+          <div class="mb-3">
+            <label for="blueRange" class="form-label">Azul: <span id="blueValue">0</span></label>
+            <input type="range" class="form-range" min="0" max="255" value="0" id="blueRange">
+            <input type="number" class="form-control mt-2" min="0" max="255" value="0" id="blueInput">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
